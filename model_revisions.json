@@ -1,0 +1,5 @@
+{
+  "finiteautomata/beto-sentiment-analysis": "9384c7f339a6d62c9e2e1d686f225f92e3a3353b",
+  "pysentimiento/robertuito-sentiment-analysis": "a2cc0f67ebd705c55191e25a05ba23d885fcc09b",
+  "cardiffnlp/twitter-xlm-roberta-base-sentiment": "f2f1202b1bdeb07342385c3f807f9c07cd8f5cf8"
+}

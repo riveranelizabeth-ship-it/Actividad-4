@@ -1,0 +1,301 @@
+﻿id,comentario,sentimiento,tema,origen
+SB001,¿Hay atención telefónica los domingos?,neutral,atencion_cliente,sintetico_generado_con_IA
+SB002,"La opción para adjuntar evidencia falla siempre, es desesperante.",negativo,aclaraciones,sintetico_generado_con_IA
+SB003,"La operación fue rápida incluso en fin de semana, quedé satisfecho.",positivo,transferencias,sintetico_generado_con_IA
+SB004,"Aunque resolvieron el rechazo, fue tan tardado que no quedé conforme.",negativo,tarjetas,sintetico_generado_con_IA
+SB005,La confirmación fue clara y me dio tranquilidad al transferir.,positivo,transferencias,sintetico_generado_con_IA
+SB006,¿Cuáles son los documentos para solicitar un crédito?,neutral,creditos,sintetico_generado_con_IA
+SB007,El estado de cuenta tiene una sección de comisiones.,neutral,comisiones,sintetico_generado_con_IA
+SB008,"Pagué la luz en segundos, qué servicio tan práctico.",positivo,pagos_servicios,sintetico_generado_con_IA
+SB009,¿La aplicación se puede instalar en una tableta?,neutral,aplicacion_movil,sintetico_generado_con_IA
+SB010,Tengo una aclaración registrada por un movimiento de mi tarjeta.,neutral,aclaraciones,sintetico_generado_con_IA
+SB011,La aplicación está lentísima y me hace perder tiempo.,negativo,aplicacion_movil,sintetico_generado_con_IA
+SB012,No puedo quitar un dispositivo que ya no uso y eso me preocupa.,negativo,seguridad_acceso,sintetico_generado_con_IA
+SB013,Voy a contactar a un asesor por la tarde.,neutral,atencion_cliente,sintetico_generado_con_IA
+SB014,Quiero consultar el estado de mi folio de aclaración.,neutral,aclaraciones,sintetico_generado_con_IA
+SB015,Es frustrante encontrar comisiones que no esperaba en mi estado de cuenta.,negativo,comisiones,sintetico_generado_con_IA
+SB016,"Aunque recuperé el acceso, perdí toda la mañana y quedé inconforme.",negativo,seguridad_acceso,sintetico_generado_con_IA
+SB017,"Me bloquearon el acceso sin explicación, estoy muy molesto.",negativo,seguridad_acceso,sintetico_generado_con_IA
+SB018,"Aunque era mi primera transferencia, el proceso me pareció sencillo.",positivo,transferencias,sintetico_generado_con_IA
+SB019,"Encontré un cajero cercano desde la app, me facilitó mucho el retiro.",positivo,cajeros,sintetico_generado_con_IA
+SB020,"Intenté depositar y el cajero se quedó bloqueado, muy mala experiencia.",negativo,cajeros,sintetico_generado_con_IA
+SB021,Realizar un pago anticipado fue fácil y me dejó contento.,positivo,creditos,sintetico_generado_con_IA
+SB022,Me encanta poder hacer mis pagos desde el celular sin complicaciones.,positivo,aplicacion_movil,sintetico_generado_con_IA
+SB023,Necesito saber cómo adjuntar documentos al folio.,neutral,aclaraciones,sintetico_generado_con_IA
+SB024,La simulación muestra el plazo y la mensualidad.,neutral,creditos,sintetico_generado_con_IA
+SB025,"No puedo descargar el recibo y nadie ayuda, muy frustrante.",negativo,pagos_servicios,sintetico_generado_con_IA
+SB026,Tengo un pago programado para el día quince.,neutral,pagos_servicios,sintetico_generado_con_IA
+SB027,"El asesor respondió todas mis dudas, excelente atención.",positivo,creditos,sintetico_generado_con_IA
+SB028,La explicación de los costos es confusa y me genera desconfianza.,negativo,comisiones,sintetico_generado_con_IA
+SB029,"Ajustar el límite es demasiado complicado, no me gusta este servicio.",negativo,tarjetas,sintetico_generado_con_IA
+SB030,"Aunque cambió el menú, encontré todo fácilmente y me gustó el diseño.",positivo,aplicacion_movil,sintetico_generado_con_IA
+SB031,Quiero consultar los dispositivos registrados.,neutral,seguridad_acceso,sintetico_generado_con_IA
+SB032,"No tuve que hacer fila para pagar el agua, excelente.",positivo,pagos_servicios,sintetico_generado_con_IA
+SB033,¿Cuál es la comisión por retirar en otro banco?,neutral,comisiones,sintetico_generado_con_IA
+SB034,"Me equivoqué al capturar y pude corregir antes de enviar, muy útil.",positivo,transferencias,sintetico_generado_con_IA
+SB035,Llevo semanas sin respuesta y me siento ignorado.,negativo,aclaraciones,sintetico_generado_con_IA
+SB036,Me gustó que avisaran antes de aplicar el cobro.,positivo,comisiones,sintetico_generado_con_IA
+SB037,Quiero consultar la fecha de mi próximo pago.,neutral,creditos,sintetico_generado_con_IA
+SB038,El asesor me pidió indicar el tipo de consulta.,neutral,atencion_cliente,sintetico_generado_con_IA
+SB039,"Nadie escucha lo que explico, me siento ignorado.",negativo,atencion_cliente,sintetico_generado_con_IA
+SB040,¿Se puede cancelar una transferencia que todavía está programada?,neutral,transferencias,sintetico_generado_con_IA
+SB041,Tengo un crédito con pagos mensuales.,neutral,creditos,sintetico_generado_con_IA
+SB042,"Pude consultar mi calendario de pagos fácilmente, muy práctico.",positivo,creditos,sintetico_generado_con_IA
+SB043,"Configurar las alertas fue fácil, muy buena experiencia.",positivo,seguridad_acceso,sintetico_generado_con_IA
+SB044,Quiero conocer el procedimiento para solicitar un reemplazo.,neutral,tarjetas,sintetico_generado_con_IA
+SB045,"Qué ayuda, el asesor no pudo explicarme ni el costo del préstamo.",negativo,creditos,sintetico_generado_con_IA
+SB046,¿En qué horario funciona la línea de atención?,neutral,atencion_cliente,sintetico_generado_con_IA
+SB047,Me cambiaron las condiciones al final y perdí la confianza.,negativo,creditos,sintetico_generado_con_IA
+SB048,"La función de retiro sin plástico me resolvió el día, buen servicio.",positivo,cajeros,sintetico_generado_con_IA
+SB049,Qué regalo del banco: otra comisión que no me habían mencionado.,negativo,comisiones,sintetico_generado_con_IA
+SB050,"El comprobante no se descarga, así no puedo aclarar nada; muy mal.",negativo,transferencias,sintetico_generado_con_IA
+SB051,Qué práctica está la función para guardar mis cuentas frecuentes.,positivo,aplicacion_movil,sintetico_generado_con_IA
+SB052,El calendario de pagos no se puede consultar y me resulta muy incómodo.,negativo,creditos,sintetico_generado_con_IA
+SB053,"Qué maravilla, otra actualización que deja la app inutilizable.",negativo,aplicacion_movil,sintetico_generado_con_IA
+SB054,"El folio desapareció de la app y nadie sabe qué ocurrió, pésimo.",negativo,aclaraciones,sintetico_generado_con_IA
+SB055,"El chat solo manda respuestas que no sirven, estoy harto.",negativo,atencion_cliente,sintetico_generado_con_IA
+SB056,Necesito saber el horario para realizar pagos de servicios.,neutral,pagos_servicios,sintetico_generado_con_IA
+SB057,"Pude elegir billetes pequeños sin complicaciones, qué útil.",positivo,cajeros,sintetico_generado_con_IA
+SB058,La conversación de chat tiene un número de referencia.,neutral,atencion_cliente,sintetico_generado_con_IA
+SB059,¿Se puede ingresar con reconocimiento facial?,neutral,seguridad_acceso,sintetico_generado_con_IA
+SB060,Me encanta poder revisar los costos antes de confirmar la operación.,positivo,comisiones,sintetico_generado_con_IA
+SB061,"Me piden el mismo documento una y otra vez, qué frustración.",negativo,aclaraciones,sintetico_generado_con_IA
+SB062,"El desembolso llegó cuando lo prometieron, quedé satisfecho.",positivo,creditos,sintetico_generado_con_IA
+SB063,Voy a transferir dinero entre mis dos cuentas.,neutral,transferencias,sintetico_generado_con_IA
+SB064,Voy a comparar dos plazos en el simulador.,neutral,creditos,sintetico_generado_con_IA
+SB065,Voy a revisar los requisitos para reportar un cargo.,neutral,aclaraciones,sintetico_generado_con_IA
+SB066,"El asesor revisó mis documentos con cuidado, muy buen trato.",positivo,aclaraciones,sintetico_generado_con_IA
+SB067,"No cumplieron el plazo que me dieron, muy mala atención.",negativo,aclaraciones,sintetico_generado_con_IA
+SB068,Hoy registré una referencia para pagar el teléfono.,neutral,pagos_servicios,sintetico_generado_con_IA
+SB069,El reemplazo de mi tarjeta fue ágil y quedé muy satisfecho.,positivo,tarjetas,sintetico_generado_con_IA
+SB070,"Aunque devolvieron una parte, sigo inconforme con el cobro.",negativo,comisiones,sintetico_generado_con_IA
+SB071,El comprobante incluye la fecha y el importe de la operación.,neutral,transferencias,sintetico_generado_con_IA
+SB072,El comprobante del pago muestra el nombre del servicio.,neutral,pagos_servicios,sintetico_generado_con_IA
+SB073,"El aviso de inicio de sesión me dio tranquilidad, buena función.",positivo,seguridad_acceso,sintetico_generado_con_IA
+SB074,"Cambiar mi contraseña fue rápido y sencillo, me gustó.",positivo,seguridad_acceso,sintetico_generado_con_IA
+SB075,El número de folio aparece en el correo de confirmación.,neutral,aclaraciones,sintetico_generado_con_IA
+SB076,"No esperaba que fuera tan sencillo consultar mis gastos, me sorprendió para bien.",positivo,aplicacion_movil,sintetico_generado_con_IA
+SB077,Quiero consultar los servicios disponibles para pago.,neutral,pagos_servicios,sintetico_generado_con_IA
+SB078,"No esperaba una respuesta tan rápida, qué buen trato.",positivo,atencion_cliente,sintetico_generado_con_IA
+SB079,El bloqueo preventivo evitó un cargo y me sentí protegido.,positivo,seguridad_acceso,sintetico_generado_con_IA
+SB080,Me gustó que el cajero confirmara el importe antes de depositar.,positivo,cajeros,sintetico_generado_con_IA
+SB081,"Me pidieron documentos que ya había entregado, qué fastidio.",negativo,creditos,sintetico_generado_con_IA
+SB082,"El cajero estaba disponible y terminé enseguida, excelente.",positivo,cajeros,sintetico_generado_con_IA
+SB083,"Aunque había fila, la operación fue rápida y salí contento.",positivo,cajeros,sintetico_generado_con_IA
+SB084,Hoy envié un comprobante como parte de mi aclaración.,neutral,aclaraciones,sintetico_generado_con_IA
+SB085,Qué cómodo pagar desde casa si el sistema nunca termina la operación.,negativo,pagos_servicios,sintetico_generado_con_IA
+SB086,"La aclaración quedó resuelta antes del plazo, excelente atención.",positivo,aclaraciones,sintetico_generado_con_IA
+SB087,"Mandar dinero a mis contactos es muy fácil, me gusta mucho.",positivo,transferencias,sintetico_generado_con_IA
+SB088,Necesito conocer los pasos para configurar las alertas.,neutral,seguridad_acceso,sintetico_generado_con_IA
+SB089,No recibí aviso del acceso desconocido y me siento desprotegido.,negativo,seguridad_acceso,sintetico_generado_con_IA
+SB090,"No batallé para consultar el número digital, está muy práctico.",positivo,tarjetas,sintetico_generado_con_IA
+SB091,"Aunque completé el depósito, el proceso fue lento y confuso; no me gustó.",negativo,cajeros,sintetico_generado_con_IA
+SB092,"Aunque aprobaron el crédito, la atención fue tan mala que quedé decepcionado.",negativo,creditos,sintetico_generado_con_IA
+SB093,Pagar tanto por un servicio que falla me parece inaceptable.,negativo,comisiones,sintetico_generado_con_IA
+SB094,"La tarjeta digital desapareció justo al pagar, muy mala experiencia.",negativo,tarjetas,sintetico_generado_con_IA
+SB095,"Me cobraron dos veces la transferencia, qué mal servicio.",negativo,transferencias,sintetico_generado_con_IA
+SB096,El recibo incluye una fecha límite de pago.,neutral,pagos_servicios,sintetico_generado_con_IA
+SB097,"Me atendieron enseguida por teléfono, excelente servicio.",positivo,atencion_cliente,sintetico_generado_con_IA
+SB098,Me explicaron las condiciones con paciencia y me dieron confianza.,positivo,creditos,sintetico_generado_con_IA
+SB099,"Qué bonito, la tarjeta nueva tampoco sirve para comprar.",negativo,tarjetas,sintetico_generado_con_IA
+SB100,Voy a retirar efectivo por la tarde.,neutral,cajeros,sintetico_generado_con_IA
+SB101,"Aunque esperé unos minutos, la ayuda fue tan buena que valió la pena.",positivo,atencion_cliente,sintetico_generado_con_IA
+SB102,Me mantuvieron informado y eso me gustó mucho.,positivo,aclaraciones,sintetico_generado_con_IA
+SB103,Registrar la reclamación desde la app fue muy sencillo.,positivo,aclaraciones,sintetico_generado_con_IA
+SB104,¿Dónde se publica el listado de tarifas?,neutral,comisiones,sintetico_generado_con_IA
+SB105,Hoy consulté el límite disponible de mi tarjeta.,neutral,tarjetas,sintetico_generado_con_IA
+SB106,"Me aparece un error al final y tengo que empezar otra vez, qué fastidio.",negativo,pagos_servicios,sintetico_generado_con_IA
+SB107,"No tuve que ir a sucursal para enviar el dinero, qué comodidad.",positivo,transferencias,sintetico_generado_con_IA
+SB108,Desde la actualización ya no puedo entrar y estoy muy molesto.,negativo,aplicacion_movil,sintetico_generado_con_IA
+SB109,¿Dónde consulto la fecha de vencimiento de mi tarjeta?,neutral,tarjetas,sintetico_generado_con_IA
+SB110,"Mi tarjeta llegó antes de lo previsto, muy buen servicio.",positivo,tarjetas,sintetico_generado_con_IA
+SB111,"Me prometieron entregarla ayer y no llegó, estoy decepcionado.",negativo,tarjetas,sintetico_generado_con_IA
+SB112,Programar el pago del internet fue sencillo y me gustó.,positivo,pagos_servicios,sintetico_generado_con_IA
+SB113,¿Dónde puedo descargar la respuesta a mi solicitud?,neutral,aclaraciones,sintetico_generado_con_IA
+SB114,Quiero consultar las condiciones para exentar la comisión mensual.,neutral,comisiones,sintetico_generado_con_IA
+SB115,"No tuve problemas para depositar, quedé satisfecho.",positivo,cajeros,sintetico_generado_con_IA
+SB116,¿Dónde se cambia la contraseña de acceso?,neutral,seguridad_acceso,sintetico_generado_con_IA
+SB117,"No me devolvieron el cargo incorrecto, qué decepción.",negativo,comisiones,sintetico_generado_con_IA
+SB118,Necesito el número de atención para clientes en el extranjero.,neutral,atencion_cliente,sintetico_generado_con_IA
+SB119,"Pude agregar evidencia sin problemas, el proceso me pareció cómodo.",positivo,aclaraciones,sintetico_generado_con_IA
+SB120,"La solicitud lleva días sin respuesta, estoy frustrado.",negativo,creditos,sintetico_generado_con_IA
+SB121,Guardar mi recibo para el próximo mes me facilita mucho las cosas.,positivo,pagos_servicios,sintetico_generado_con_IA
+SB122,La aplicación tiene una sección para consultar el saldo.,neutral,aplicacion_movil,sintetico_generado_con_IA
+SB123,La confirmación del pago llegó enseguida y me dio tranquilidad.,positivo,pagos_servicios,sintetico_generado_con_IA
+SB124,El número de la tarjeta aparece en el apartado digital.,neutral,tarjetas,sintetico_generado_con_IA
+SB125,Hoy activé las notificaciones de inicio de sesión.,neutral,seguridad_acceso,sintetico_generado_con_IA
+SB126,"Mi transferencia llegó al instante, excelente.",positivo,transferencias,sintetico_generado_con_IA
+SB127,"Desde la última actualización la app funciona mucho mejor, estoy feliz.",positivo,aplicacion_movil,sintetico_generado_con_IA
+SB128,"Activarla desde el celular fue fácil y rápido, me encantó.",positivo,tarjetas,sintetico_generado_con_IA
+SB129,La pantalla permite seleccionar la tarjeta que quiero revisar.,neutral,tarjetas,sintetico_generado_con_IA
+SB130,"Qué suerte, recorrí tres cajeros y ninguno funcionaba.",negativo,cajeros,sintetico_generado_con_IA
+SB131,La pantalla muestra la fecha de apertura del caso.,neutral,aclaraciones,sintetico_generado_con_IA
+SB132,Por fin una app bancaria que entiendo sin pedir ayuda.,positivo,aplicacion_movil,sintetico_generado_con_IA
+SB133,"Me piden verificar mi identidad en cada pantalla, estoy harto.",negativo,seguridad_acceso,sintetico_generado_con_IA
+SB134,"La activación falla una y otra vez, es desesperante.",negativo,tarjetas,sintetico_generado_con_IA
+SB135,¿Dónde puedo revisar el saldo pendiente del préstamo?,neutral,creditos,sintetico_generado_con_IA
+SB136,"No hubo sorpresas en la mensualidad, estoy conforme con el servicio.",positivo,creditos,sintetico_generado_con_IA
+SB137,Me gustó poder revisar el costo antes de aceptar el crédito.,positivo,creditos,sintetico_generado_con_IA
+SB138,"Gracias por dar seguimiento hasta que quedó resuelto, muy buena atención.",positivo,atencion_cliente,sintetico_generado_con_IA
+SB139,"El cajero descontó el retiro pero no entregó dinero, estoy muy molesto.",negativo,cajeros,sintetico_generado_con_IA
+SB140,"El dinero no llegó y nadie me explica qué pasó, estoy preocupado y molesto.",negativo,transferencias,sintetico_generado_con_IA
+SB141,El contrato incluye la tasa de interés y el CAT.,neutral,creditos,sintetico_generado_con_IA
+SB142,¿Se puede utilizar la tarjeta digital para compras por internet?,neutral,tarjetas,sintetico_generado_con_IA
+SB143,"Necesitaba pagar algo urgente y la app no respondió, muy frustrante.",negativo,aplicacion_movil,sintetico_generado_con_IA
+SB144,"La referencia se leyó correctamente a la primera, qué comodidad.",positivo,pagos_servicios,sintetico_generado_con_IA
+SB145,La pantalla pide la CLABE antes de continuar.,neutral,transferencias,sintetico_generado_con_IA
+SB146,Me encanta tener mis pagos organizados en un solo lugar.,positivo,pagos_servicios,sintetico_generado_con_IA
+SB147,"Aunque tuve que entregar documentos, el proceso fue ordenado y cómodo.",positivo,creditos,sintetico_generado_con_IA
+SB148,La app abre rápido y ahora revisar mi saldo es muy cómodo.,positivo,aplicacion_movil,sintetico_generado_con_IA
+SB149,Qué rápido resuelven: solo marcaron el caso como cerrado y no hicieron nada.,negativo,aclaraciones,sintetico_generado_con_IA
+SB150,Quiero saber qué denominaciones entrega el cajero.,neutral,cajeros,sintetico_generado_con_IA
+SB151,Voy a actualizar el teléfono asociado a mi cuenta.,neutral,seguridad_acceso,sintetico_generado_con_IA
+SB152,Necesito actualizar la dirección para recibir mi tarjeta.,neutral,tarjetas,sintetico_generado_con_IA
+SB153,"Cerraron mi aclaración sin explicar nada, estoy muy molesto.",negativo,aclaraciones,sintetico_generado_con_IA
+SB154,"Recibí el plástico dañado y nadie se hace responsable, pésimo.",negativo,tarjetas,sintetico_generado_con_IA
+SB155,"El cargo aumentó sin que me avisaran, qué mal servicio.",negativo,comisiones,sintetico_generado_con_IA
+SB156,No me cobraron por la transferencia y quedé satisfecho.,positivo,comisiones,sintetico_generado_con_IA
+SB157,"Aunque el diseño se ve bonito, prefiero que funcione; la experiencia fue mala.",negativo,aplicacion_movil,sintetico_generado_con_IA
+SB158,La nueva pantalla de movimientos es clara y me facilita organizarme.,positivo,aplicacion_movil,sintetico_generado_con_IA
+SB159,"Me descontaron el dinero pero el recibo sigue sin pagarse, estoy preocupado.",negativo,pagos_servicios,sintetico_generado_con_IA
+SB160,Me gustó que el límite de compra se pueda ajustar tan fácilmente.,positivo,tarjetas,sintetico_generado_con_IA
+SB161,"El simulador muestra un importe distinto al contrato, qué mala experiencia.",negativo,creditos,sintetico_generado_con_IA
+SB162,El código de verificación llega por mensaje.,neutral,seguridad_acceso,sintetico_generado_con_IA
+SB163,Hoy consulté el saldo en un cajero automático.,neutral,cajeros,sintetico_generado_con_IA
+SB164,"Me notificaron una operación extraña y pude actuar enseguida, qué alivio.",positivo,seguridad_acceso,sintetico_generado_con_IA
+SB165,"El asesor cumplió con llamarme y resolvió todo, estoy satisfecho.",positivo,atencion_cliente,sintetico_generado_con_IA
+SB166,"Me cobraron una comisión que nadie me explicó, estoy indignado.",negativo,comisiones,sintetico_generado_con_IA
+SB167,"La pantalla explica bien los pasos, muy buena experiencia.",positivo,cajeros,sintetico_generado_con_IA
+SB168,Hoy llamé para solicitar información sobre mi cuenta.,neutral,atencion_cliente,sintetico_generado_con_IA
+SB169,Necesito información sobre pagos anticipados.,neutral,creditos,sintetico_generado_con_IA
+SB170,¿Dónde está el cajero más cercano a esta zona?,neutral,cajeros,sintetico_generado_con_IA
+SB171,"Qué bien que avisan cuando se completa el envío, me siento seguro.",positivo,transferencias,sintetico_generado_con_IA
+SB172,La función de búsqueda no encuentra mis movimientos y me resulta inútil.,negativo,aplicacion_movil,sintetico_generado_con_IA
+SB173,Qué seguridad tan práctica: no puedo entrar ni yo.,negativo,seguridad_acceso,sintetico_generado_con_IA
+SB174,"Otra vez la pantalla en blanco, pésimo servicio.",negativo,aplicacion_movil,sintetico_generado_con_IA
+SB175,"Pude descargar el recibo sin problemas, quedé satisfecho.",positivo,pagos_servicios,sintetico_generado_con_IA
+SB176,¿Se puede pagar el recibo del agua desde la app?,neutral,pagos_servicios,sintetico_generado_con_IA
+SB177,"Aunque hay una comisión, la información fue transparente y me dejó conforme.",positivo,comisiones,sintetico_generado_con_IA
+SB178,"Me devolvieron el cargo y me explicaron el resultado, quedé satisfecho.",positivo,aclaraciones,sintetico_generado_con_IA
+SB179,"El chat fue claro y solucionó mi duda, quedé contento.",positivo,atencion_cliente,sintetico_generado_con_IA
+SB180,La comisión por reposición me parece excesiva.,negativo,comisiones,sintetico_generado_con_IA
+SB181,"La cuenta sin comisión me ayuda a ahorrar, excelente.",positivo,comisiones,sintetico_generado_con_IA
+SB182,Quiero saber qué documentos debo tener antes de llamar.,neutral,atencion_cliente,sintetico_generado_con_IA
+SB183,"El recordatorio llegó después del vencimiento, una función inútil para mí.",negativo,pagos_servicios,sintetico_generado_con_IA
+SB184,El desglose de cargos es claro y me resulta muy útil.,positivo,comisiones,sintetico_generado_con_IA
+SB185,Voy a cambiar la referencia del servicio de internet.,neutral,pagos_servicios,sintetico_generado_con_IA
+SB186,"El pago programado no se hizo y me generó un recargo, pésimo.",negativo,pagos_servicios,sintetico_generado_con_IA
+SB187,¿Se puede descargar el calendario de pagos?,neutral,creditos,sintetico_generado_con_IA
+SB188,"Programé la transferencia sin dificultad, buen servicio.",positivo,transferencias,sintetico_generado_con_IA
+SB189,La tarjeta virtual me resulta cómoda para mis compras en línea.,positivo,tarjetas,sintetico_generado_con_IA
+SB190,El comprobante se descargó enseguida y me resolvió todo.,positivo,transferencias,sintetico_generado_con_IA
+SB191,Qué eficiente atención: me colgaron justo cuando contaba el problema.,negativo,atencion_cliente,sintetico_generado_con_IA
+SB192,El comprobante indica la ubicación del cajero.,neutral,cajeros,sintetico_generado_con_IA
+SB193,La aplicación solicita un código para confirmar la operación.,neutral,seguridad_acceso,sintetico_generado_con_IA
+SB194,"Aunque era un servicio nuevo, el pago fue muy fácil.",positivo,pagos_servicios,sintetico_generado_con_IA
+SB195,La pantalla solicita seleccionar el tipo de operación.,neutral,cajeros,sintetico_generado_con_IA
+SB196,¿La anualidad se cobra en una sola exhibición?,neutral,comisiones,sintetico_generado_con_IA
+SB197,"Cumplí los requisitos y aun así me cobraron, estoy muy molesto.",negativo,comisiones,sintetico_generado_con_IA
+SB198,"El desembolso no llegó cuando lo necesitaba, pésimo servicio.",negativo,creditos,sintetico_generado_con_IA
+SB199,"Pagar el agua requiere demasiados pasos, no me gusta.",negativo,pagos_servicios,sintetico_generado_con_IA
+SB200,No pude enviar el dinero cuando lo necesitaba y eso me perjudicó.,negativo,transferencias,sintetico_generado_con_IA
+SB201,¿Dónde puedo cerrar las sesiones abiertas?,neutral,seguridad_acceso,sintetico_generado_con_IA
+SB202,"Pude cerrar la sesión de otro dispositivo sin dificultad, muy útil.",positivo,seguridad_acceso,sintetico_generado_con_IA
+SB203,El menú telefónico tiene una opción para tarjetas.,neutral,atencion_cliente,sintetico_generado_con_IA
+SB204,La tarjeta fue rechazada sin explicación y me hizo pasar un mal rato.,negativo,tarjetas,sintetico_generado_con_IA
+SB205,"Pude hacer todas mis operaciones en unos minutos, muy buena experiencia.",positivo,aplicacion_movil,sintetico_generado_con_IA
+SB206,"El simulador me ayudó a decidir, qué herramienta tan útil.",positivo,creditos,sintetico_generado_con_IA
+SB207,En la pantalla principal aparece el número de mi cuenta.,neutral,aplicacion_movil,sintetico_generado_con_IA
+SB208,Quiero comparar las comisiones de dos tipos de cuenta.,neutral,comisiones,sintetico_generado_con_IA
+SB209,Hoy revisé la comisión asociada a mi cuenta.,neutral,comisiones,sintetico_generado_con_IA
+SB210,No puedo apagar la tarjeta desde la app y eso me preocupa mucho.,negativo,tarjetas,sintetico_generado_con_IA
+SB211,"La pantalla no responde y me hizo perder tiempo, pésimo.",negativo,cajeros,sintetico_generado_con_IA
+SB212,"Aunque al final llegó el dinero, la espera y la falta de información fueron pésimas.",negativo,transferencias,sintetico_generado_con_IA
+SB213,El acceso con huella funciona muy bien y me resulta cómodo.,positivo,seguridad_acceso,sintetico_generado_con_IA
+SB214,"Nadie explica por qué aumentó mi mensualidad, estoy preocupado.",negativo,creditos,sintetico_generado_con_IA
+SB215,Necesito conocer el límite para retirar sin tarjeta.,neutral,cajeros,sintetico_generado_con_IA
+SB216,"Aunque perdí el plástico, bloquearlo fue sencillo y me sentí protegido.",positivo,tarjetas,sintetico_generado_con_IA
+SB217,"La solicitud del crédito fue clara y sencilla, buena experiencia.",positivo,creditos,sintetico_generado_con_IA
+SB218,"Me dieron instrucciones contradictorias, perdí toda la mañana.",negativo,atencion_cliente,sintetico_generado_con_IA
+SB219,"Rechazaron mi reclamación con una respuesta incomprensible, estoy decepcionado.",negativo,aclaraciones,sintetico_generado_con_IA
+SB220,El control para apagar la tarjeta me da mucha tranquilidad.,positivo,tarjetas,sintetico_generado_con_IA
+SB221,"La devolución del cobro incorrecto fue rápida, buena atención.",positivo,comisiones,sintetico_generado_con_IA
+SB222,¿Dónde puedo consultar mis pagos anteriores?,neutral,pagos_servicios,sintetico_generado_con_IA
+SB223,¿Dónde se registra la cuenta del destinatario?,neutral,transferencias,sintetico_generado_con_IA
+SB224,"Aunque recuperé el dinero, el proceso fue tan desgastante que quedé inconforme.",negativo,aclaraciones,sintetico_generado_con_IA
+SB225,"El comprobante salió claro y completo, muy bien.",positivo,cajeros,sintetico_generado_con_IA
+SB226,La app muestra los movimientos ordenados por fecha.,neutral,aplicacion_movil,sintetico_generado_con_IA
+SB227,¿Se pueden depositar billetes en ese equipo?,neutral,cajeros,sintetico_generado_con_IA
+SB228,"No tuve problemas para recuperar el acceso, excelente servicio.",positivo,seguridad_acceso,sintetico_generado_con_IA
+SB229,"El comprobante salió ilegible y me complicó la aclaración, muy mal.",negativo,cajeros,sintetico_generado_con_IA
+SB230,"Me avisaron de la entrega y cumplieron, muy bien.",positivo,tarjetas,sintetico_generado_con_IA
+SB231,"Todos los cajeros de la zona estaban fuera de servicio, qué desastre.",negativo,cajeros,sintetico_generado_con_IA
+SB232,"La transferencia quedó pendiente todo el día, una experiencia terrible.",negativo,transferencias,sintetico_generado_con_IA
+SB233,La asesora escuchó mi problema y lo resolvió con mucha amabilidad.,positivo,atencion_cliente,sintetico_generado_con_IA
+SB234,La persona que me atendió tuvo paciencia y me dio confianza.,positivo,atencion_cliente,sintetico_generado_con_IA
+SB235,Ayer envié dinero a una cuenta de otro banco.,neutral,transferencias,sintetico_generado_con_IA
+SB236,"No tuve que explicar el caso varias veces, eso me gustó mucho.",positivo,atencion_cliente,sintetico_generado_con_IA
+SB237,El seguimiento del folio me dio tranquilidad durante el proceso.,positivo,aclaraciones,sintetico_generado_con_IA
+SB238,El cajero ofrece retiros y consulta de saldo.,neutral,cajeros,sintetico_generado_con_IA
+SB239,"Aunque fueron amables, no solucionaron nada y quedé decepcionado.",negativo,atencion_cliente,sintetico_generado_con_IA
+SB240,"El reconocimiento de huella falla siempre, qué frustración.",negativo,seguridad_acceso,sintetico_generado_con_IA
+SB241,"Me explicaron cada paso con palabras sencillas, gran experiencia.",positivo,atencion_cliente,sintetico_generado_con_IA
+SB242,No me gusta tener que repetir todos los pasos cuando se bloquea.,negativo,aplicacion_movil,sintetico_generado_con_IA
+SB243,¿Cuál es el plazo de respuesta para una reclamación?,neutral,aclaraciones,sintetico_generado_con_IA
+SB244,Registrar un destinatario fue tan complicado que terminé muy frustrado.,negativo,transferencias,sintetico_generado_con_IA
+SB245,"Recibí una respuesta completa y entendí lo ocurrido, buena experiencia.",positivo,aclaraciones,sintetico_generado_con_IA
+SB246,"La app se cierra cada vez que intento consultar mi saldo, qué desesperación.",negativo,aplicacion_movil,sintetico_generado_con_IA
+SB247,La tarjeta física tiene un chip en la parte frontal.,neutral,tarjetas,sintetico_generado_con_IA
+SB248,El contrato describe los cargos por servicios.,neutral,comisiones,sintetico_generado_con_IA
+SB249,"Supuestamente era inmediata, pero sigo esperando; vaya servicio.",negativo,transferencias,sintetico_generado_con_IA
+SB250,Hay dos cajeros junto a la entrada de la sucursal.,neutral,cajeros,sintetico_generado_con_IA
+SB251,Hoy abrí la app para revisar los movimientos de mi cuenta.,neutral,aplicacion_movil,sintetico_generado_con_IA
+SB252,Hay una opción para agregar cuentas frecuentes.,neutral,aplicacion_movil,sintetico_generado_con_IA
+SB253,Me explicaron las comisiones claramente y eso me dio confianza.,positivo,comisiones,sintetico_generado_con_IA
+SB254,Hacer un pago anticipado fue un trámite agotador.,negativo,creditos,sintetico_generado_con_IA
+SB255,"Aunque dice pago exitoso, el servicio fue suspendido; estoy indignado.",negativo,pagos_servicios,sintetico_generado_con_IA
+SB256,"Cumplieron las condiciones para exentar la comisión, qué bien.",positivo,comisiones,sintetico_generado_con_IA
+SB257,"Retiré dinero sin tarjeta y fue muy sencillo, me encantó.",positivo,cajeros,sintetico_generado_con_IA
+SB258,Quiero consultar el límite diario para transferencias.,neutral,transferencias,sintetico_generado_con_IA
+SB259,Necesito conocer el costo de reponer una tarjeta.,neutral,comisiones,sintetico_generado_con_IA
+SB260,"Pude comprar sin problemas en el extranjero, excelente experiencia.",positivo,tarjetas,sintetico_generado_con_IA
+SB261,"Cada asesor dice algo distinto sobre mi caso, ya estoy harto.",negativo,aclaraciones,sintetico_generado_con_IA
+SB262,"El menú nuevo es confuso, tardé demasiado en encontrar mis pagos.",negativo,aplicacion_movil,sintetico_generado_con_IA
+SB263,La pantalla solicita el importe del recibo.,neutral,pagos_servicios,sintetico_generado_con_IA
+SB264,"El retiro sin tarjeta falló cuando más lo necesitaba, estoy decepcionado.",negativo,cajeros,sintetico_generado_con_IA
+SB265,"Pude consultar todos los costos fácilmente, muy buen servicio.",positivo,comisiones,sintetico_generado_con_IA
+SB266,El historial muestra tres transferencias esta semana.,neutral,transferencias,sintetico_generado_con_IA
+SB267,La pantalla muestra el importe del cargo antes de continuar.,neutral,comisiones,sintetico_generado_con_IA
+SB268,La pantalla tiene una opción para recuperar el acceso.,neutral,seguridad_acceso,sintetico_generado_con_IA
+SB269,Las alertas llegan horas después y no me dan confianza.,negativo,seguridad_acceso,sintetico_generado_con_IA
+SB270,"El equipo retuvo mi tarjeta y nadie me orientó, fue horrible.",negativo,cajeros,sintetico_generado_con_IA
+SB271,"Me dejaron esperando cuarenta minutos y no resolvieron nada, pésima atención.",negativo,atencion_cliente,sintetico_generado_con_IA
+SB272,Voy a activar el plástico que recibí esta semana.,neutral,tarjetas,sintetico_generado_con_IA
+SB273,"Aunque hubo una verificación extra, fue clara y me dio confianza.",positivo,seguridad_acceso,sintetico_generado_con_IA
+SB274,"No había efectivo otra vez, qué frustración.",negativo,cajeros,sintetico_generado_con_IA
+SB275,"El código nunca llega y no puedo entrar, es desesperante.",negativo,seguridad_acceso,sintetico_generado_con_IA
+SB276,"Llevo semanas esperando el reemplazo, qué falta de atención.",negativo,tarjetas,sintetico_generado_con_IA
+SB277,"No tuve ningún problema al actualizar la aplicación, quedó excelente.",positivo,aplicacion_movil,sintetico_generado_con_IA
+SB278,"El lector no reconoce ninguna referencia, es desesperante.",negativo,pagos_servicios,sintetico_generado_con_IA
+SB279,¿Se puede consultar el seguimiento por teléfono?,neutral,aclaraciones,sintetico_generado_con_IA
+SB280,"Tuve que repetir mi problema a cuatro personas, qué frustración.",negativo,atencion_cliente,sintetico_generado_con_IA
+SB281,"No tuve que ir a sucursal para aclarar el movimiento, qué práctico.",positivo,aclaraciones,sintetico_generado_con_IA
+SB282,"Recuperar la contraseña es demasiado complicado, pésima experiencia.",negativo,seguridad_acceso,sintetico_generado_con_IA
+SB283,Tengo una consulta sobre el servicio de chat.,neutral,atencion_cliente,sintetico_generado_con_IA
+SB284,Quisiera saber qué versión de la app está disponible.,neutral,aplicacion_movil,sintetico_generado_con_IA
+SB285,La solicitud pide indicar el ingreso mensual.,neutral,creditos,sintetico_generado_con_IA
+SB286,No me gustó el trato ni la falta de seguimiento a mi consulta.,negativo,atencion_cliente,sintetico_generado_con_IA
+SB287,El asesor fue grosero y terminé más molesto que antes.,negativo,atencion_cliente,sintetico_generado_con_IA
+SB288,Necesito el comprobante de una transferencia del mes pasado.,neutral,transferencias,sintetico_generado_con_IA
+SB289,La aplicación solicita una contraseña al iniciar sesión.,neutral,aplicacion_movil,sintetico_generado_con_IA
+SB290,Consulté el apartado de configuración desde mi teléfono.,neutral,aplicacion_movil,sintetico_generado_con_IA
+SB291,"Aunque tomó varios días, la solución fue clara y justa; quedé conforme.",positivo,aclaraciones,sintetico_generado_con_IA
+SB292,Tengo una transferencia programada para el lunes.,neutral,transferencias,sintetico_generado_con_IA
+SB293,Me encanta poder controlar los accesos desde la app.,positivo,seguridad_acceso,sintetico_generado_con_IA
+SB294,Cada intento termina en error y ya estoy harto.,negativo,transferencias,sintetico_generado_con_IA
+SB295,Tengo una tarjeta de débito y otra de crédito.,neutral,tarjetas,sintetico_generado_con_IA
+SB296,"Quedaron en llamarme y nunca lo hicieron, muy mal.",negativo,atencion_cliente,sintetico_generado_con_IA
+SB297,"El recordatorio me ayudó a pagar a tiempo, muy buena función.",positivo,pagos_servicios,sintetico_generado_con_IA
+SB298,"El pago de la luz falló y tuve que ir a una tienda, qué molestia.",negativo,pagos_servicios,sintetico_generado_con_IA
+SB299,"El menú incluye transferencias, pagos y tarjetas.",neutral,aplicacion_movil,sintetico_generado_con_IA
+SB300,Es desesperante que cambien el límite sin avisarme.,negativo,transferencias,sintetico_generado_con_IA

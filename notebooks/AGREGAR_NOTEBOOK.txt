@@ -1,0 +1,1 @@
+El cuaderno ejecutado se guardó desde Colab en la raíz del repositorio GitHub. Este ZIP no contiene el notebook. Puede organizarse posteriormente en notebooks/, actualizando los enlaces.
