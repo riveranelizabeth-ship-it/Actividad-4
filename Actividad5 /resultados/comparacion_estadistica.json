@@ -1,0 +1,15 @@
+{
+  "modelo_A": "Regresion_logistica",
+  "modelo_B": "Multinomial_NB",
+  "seleccionado_por_CV": "Regresion_logistica",
+  "solo_A_acierta": 201,
+  "solo_B_acierta": 66,
+  "mcnemar_exacto_p": 4.9460565388946843e-17,
+  "diferencia_accuracy_A_menos_B": 0.0438454043520623,
+  "IC95_bootstrap_pareado_estratificado_accuracy": [
+    0.03312763884378045,
+    0.054238389087366
+  ],
+  "bootstrap_replicas": 1000,
+  "limite": "Comparaci\u00f3n de aciertos en un test fijo; no demuestra rendimiento en espa\u00f1ol ni en producci\u00f3n. La dispersi\u00f3n CV no es un intervalo de confianza independiente."
+}

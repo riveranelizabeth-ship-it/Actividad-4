@@ -1,0 +1,25 @@
+text,category,id,split,text_original,motivo
+how do i unblock my pin?,pin_blocked,train_01722,train,"
+How do I unblock my PIN?",solapamiento_con_test
+what businesses accept this card?,card_acceptance,train_03103,train,What businesses accept this card?,solapamiento_con_test
+where can i use my card?,card_acceptance,train_03116,train,"
+Where can I use my card?",solapamiento_con_test
+"there are a few transaction that i don't recognize, i think someone managed to get my card details and use it.",compromised_card,train_04476,train,"There are a few transaction that I don't recognize, I think someone managed to get my card details and use it.
+",solapamiento_con_test
+at which atms can i use this card?,atm_support,train_04576,train,"
+At which ATMs can I use this card?",solapamiento_con_test
+which cash machines will allow me to change my pin?,change_pin,train_06984,train,"
+Which cash machines will allow me to change my PIN?",solapamiento_con_test
+i don't live in the uk. can i still get a card?,country_support,train_09921,train,I don't live in the UK. Can I still get a card?,solapamiento_con_test
+i can't seem to be able to use my card,card_not_working,train_01290,train,"
+I can't seem to be able to use my card
+
+
+",duplicado_normalizado
+i put the wrong pin too many times and now it is blocked. can you help me unblock it?,pin_blocked,train_01724,train,I put the wrong pin too many times and now it is blocked. Can you help me unblock it?,duplicado_normalizado
+where can i withdraw money from?,atm_support,train_04595,train,"
+Where can I withdraw money from?",duplicado_normalizado
+do i need to go to a physical bank to change my pin?,change_pin,train_06965,train,"
+Do I need to go to a physical bank to change my PIN?",duplicado_normalizado
+which atms accept this card?,atm_support,test_01461,test,"
+Which ATMs accept this card?",duplicado_normalizado

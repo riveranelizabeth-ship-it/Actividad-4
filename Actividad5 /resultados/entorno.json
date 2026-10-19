@@ -1,0 +1,15 @@
+{
+  "python": "3.13.16",
+  "sklearn": "1.8.0",
+  "mlflow": "2.22.2",
+  "pandas": "2.2.3",
+  "seed": 42,
+  "code_sha256": "07210beb6cc86833f4f9747e458bbc9c24b8e52cb2c3e32b41b10d0733d512f2",
+  "git_commit": "sin_commit_local",
+  "tracking_uri_original": "sqlite:////content/Actividad5/mlflow.db",
+  "experimento_id": "1",
+  "run_ids": {
+    "Regresion_logistica": "b53faf52f78b411db7dae03196a0eb8a",
+    "Multinomial_NB": "a0e5a0c38b5d4c34b439081b92efa3fe"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "originales": 13083,
+  "por_split_original": {
+    "train": 10003,
+    "test": 3080
+  },
+  "vacios": 0,
+  "textos_con_etiquetas_conflictivas": 0,
+  "filas_conflictivas": 0,
+  "solapamientos_retirados_train": 7,
+  "duplicados_retirados": 5,
+  "limpios": 13071,
+  "por_split_limpio": {
+    "train": 9992,
+    "test": 3079
+  },
+  "categorias": 77,
+  "archivos_limpios_sha256": {
+    "train": "93cce4fca93a081f20c4ff7cf916fb48d1e1b71251a482b637cffad5d3f36376",
+    "test": "51e31d8f0c24ffeb2204a03de6f96cc792ee60c6c9a4b8d305d98597bb5787d8"
+  }
+}

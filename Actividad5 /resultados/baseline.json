@@ -1,0 +1,5 @@
+{
+  "accuracy": 0.012991230919129588,
+  "f1_macro": 0.00033310709809587655,
+  "regla": "clase_mayoritaria_train"
+}
