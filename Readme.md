@@ -1,3 +1,12 @@
+## Actividad 5 — Versión 2 con MLflow
+
+Clasificación de 77 intenciones bancarias con regresión logística y Naive Bayes. Incluye datos, notebook ejecutado, comparación de modelos y evidencias de MLflow.
+
+- [Ver proyecto y documentación](Actividad5/README.md)
+- [Consultar reporte técnico](Actividad5/Reporte_tecnico.pdf)
+- [Ver notebook ejecutado](Actividad5/fuentes/entrena.ipynb)
+- [Consultar evidencias](Actividad5/evidencias/)
+
 # SentimentAI Banking — Actividad 4
 
 ## Caso de uso
