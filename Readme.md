@@ -4,7 +4,7 @@ Clasificación de 77 intenciones bancarias con regresión logística y Naive Bay
 
 - [Ver proyecto y documentación](Actividad5/README.md)
 - [Consultar reporte técnico](Actividad5/Reporte_tecnico.pdf)
-- [Ver notebook ejecutado](Actividad5/fuentes/entrena.ipynb)
+- [Ver notebook ejecutado](Actividad5%20/fuentes/entrena.ipynb)
 - [Consultar evidencias](Actividad5/evidencias/)
 
 # SentimentAI Banking — Actividad 4
