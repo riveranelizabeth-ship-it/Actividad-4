@@ -50,7 +50,7 @@ Para su implementación se recomienda evaluar umbrales de confianza, incorporar 
 
 **Trello:** Actividad 6 | Evaluación y validación de modelos de IA.
 
-[Ver tablero de Trello](https://trello.com/invite/b/6adeb877c9f91d34a5819b19/ATTI9b5cd53b7d77f3f40a229fa24cd317db35D32F58/actividad-6-evaluacion-y-validacion-de-modelos-de-ia)
+[Ver tablero de Trello – Actividad 6](https://trello.com/b/6adeb877c9f91d34a5819b19)
 
 ## Conclusión
 
