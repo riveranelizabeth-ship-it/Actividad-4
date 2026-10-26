@@ -1,11 +1,18 @@
-1. Objetivo del proyecto
+1. Actividad 6 – Evaluación y validación de modelos de clasificación bancaria
+Esta actividad amplía la evaluación de los modelos de Regresión Logística y Naive Bayes utilizados para clasificar 77 intenciones bancarias.
+Se analizan métricas de desempeño, curvas ROC multiclase, indicadores AUC y una simulación A/B retrospectiva basada en datos históricos.
+Los resultados permiten comparar ambos modelos, identificar sus limitaciones y fundamentar la selección de Regresión Logística como alternativa principal, sujeta a validación operativa y supervisión humana.
+
+2.  Objetivo del proyecto
 Evaluar y validar modelos de aprendizaje automático para clasificar 77 intenciones bancarias, con el propósito de identificar la alternativa que ofrezca el mejor desempeño y mayor estabilidad.
 Objetivo SMART: Alcanzar un F1 macro igual o superior a 0.90 en el conjunto de prueba.
-2. Modelos evaluados
+
+4. Modelos evaluados
 Se compararon dos algoritmos de clasificación:
 •	Regresión Logística: modelo discriminativo utilizado para predecir la intención bancaria correspondiente.
 •	Multinomial Naive Bayes: modelo probabilístico utilizado como alternativa de comparación.
-3. Resultados de evaluación
+
+6. Resultados de evaluación
 Indicador	Regresión Logística	Naive Bayes
 F1 macro en prueba	0.9008	0.8558
 F1 macro en validación cruzada	0.8824	0.8391
