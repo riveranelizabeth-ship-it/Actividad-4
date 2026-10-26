@@ -144,4 +144,4 @@ Las limitaciones principales son: el **F1 macro medio en validación cruzada de 
 - **`Actividad5_ejecutada.zip`**: insumo de resultados requerido para volver a ejecutar los notebooks, según las celdas de carga.
 - **[Tablero de Trello](https://trello.com/b/6adeb877c9f91d34a5819b19)**: visualización, comparación, organización de evidencias y decisión final.
 
-**Nota de entrega:** este reporte está redactado en Markdown para GitHub. La indicación académica habla de una **extensión sugerida** de 6–8 páginas, no de una paginación inherente a Markdown; si se requiere acreditar una longitud física, exportar a PDF y revisar su paginación. Las gráficas se consultan en los notebooks y en Trello, por lo que el repositorio debe conservar esos vínculos y archivos accesibles.
+
