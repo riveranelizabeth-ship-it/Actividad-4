@@ -1,6 +1,6 @@
 # Actividad 8 — Monitoreo de SentimentAI Banking
 
-**Estado:** línea base ejecutada en Colab con CPU. Simulación ejecutada por reproducción de solicitudes. Visualización y registro de los incidentes en Colab pendientes de verificación.
+**Estado:** línea base ejecutada en Colab con CPU. Simulación ejecutada por reproducción de solicitudes. Visualización y corrida de incidentes en MLflow verificadas en Colab. Prueba de drift ejecutada.
 
 ## 1. Monitorización y observabilidad
 
@@ -72,4 +72,19 @@ El pico aislado de la ventana 2 quedó sin alerta. Cada incidente generó un avi
 
 En el entorno de pruebas, la alerta confirmada de degradación restaurará la versión estable. El código registrará el motivo, las versiones anterior y posterior y el resultado de la verificación. Si la verificación falla, el incidente seguirá abierto para escalamiento. Una señal de drift iniciará revisión de datos antes de plantear un reentrenamiento.
 
-Queda pendiente incorporar la evidencia visual del dashboard, el registro de incidentes en MLflow y la prueba de detección de drift.
+La ejecución de Colab mostró el tablero y confirmó la corrida `simulacion-incidentes` en MLflow. El notebook exporta `dashboard_incidentes.png` y `resultados_incidentes.json`. El tablero resume ventanas de reproducción y muestra la alerta y el cierre.
+
+### Prueba de detección de data drift
+
+Se construyó un vocabulario con 150 comentarios, se calibraron las métricas con otros 50 y se evaluaron 100 comentarios de control antes y después de añadirles seis palabras de un tema nuevo. Los umbrales experimentales abren revisión si la mediana de longitud cambia al menos 30 % o si la proporción de palabras fuera del vocabulario aumenta al menos 15 puntos porcentuales frente a calibración.
+
+| Ventana | Mediana de palabras | Palabras fuera del vocabulario | Alerta |
+| --- | ---: | ---: | --- |
+| Calibración | 9 | 20.71 % | — |
+| Control | 9 | 20.34 % | No |
+| Cambio sintético | 15 | 51.19 % | Sí |
+
+La señal abre una revisión del cambio en los textos. Para determinar si afecta al modelo se necesitarían predicciones y etiquetas de esa ventana.
+
+- [Código del detector](detectar_drift.py)
+- [Resultados exportados de drift](evidencias/drift/resultados.json)
