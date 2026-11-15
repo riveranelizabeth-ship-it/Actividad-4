@@ -1,0 +1,24 @@
+{
+  "vocabulario_comentarios": 150,
+  "calibracion": {
+    "comentarios": 50,
+    "mediana_palabras": 9.0,
+    "fraccion_fuera_vocabulario": 0.20711297071129708
+  },
+  "control": {
+    "comentarios": 100,
+    "mediana_palabras": 9.0,
+    "fraccion_fuera_vocabulario": 0.20337197049525815,
+    "cambio_relativo_longitud": 0.0,
+    "incremento_fuera_vocabulario": -0.003741000216038931,
+    "alerta_revision": false
+  },
+  "cambio_sintetico": {
+    "comentarios": 100,
+    "mediana_palabras": 15.0,
+    "fraccion_fuera_vocabulario": 0.511943189154293,
+    "cambio_relativo_longitud": 0.6666666666666667,
+    "incremento_fuera_vocabulario": 0.30483021844299596,
+    "alerta_revision": true
+  }
+}
