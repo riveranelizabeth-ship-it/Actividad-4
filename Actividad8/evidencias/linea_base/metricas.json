@@ -1,0 +1,9 @@
+{
+  "solicitudes": 300,
+  "errores": 0,
+  "latencia_p95_ms": 174.45429559996342,
+  "fraccion_cumple_slo": 1.0,
+  "consumo_presupuesto": 0.0,
+  "recall_negativo": 0.95,
+  "f1_macro": 0.9767375442985199
+}
