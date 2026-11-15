@@ -53,6 +53,10 @@ La latencia se medirá de extremo a extremo. La línea base del cuaderno permite
 
 ### Resultados de la simulación
 
+![Dashboard de Colab con latencia y recall por ventana](evidencias/incidentes/dashboard_incidentes.png)
+
+El p95 resume la latencia en cada ventana. La alerta de latencia se evalúa con la proporción de solicitudes que incumplen el SLO.
+
 Se reprodujeron las 300 solicitudes originales en cada ventana. Se sumaron 700 ms en el perfil de demora. La variante degradada cambió a neutral las predicciones negativas en posiciones pares del registro (índice desde cero). Las acciones cambian el perfil de la simulación.
 
 | Indicador | Ventana 1 · Línea base | Ventana 5 · Alerta | Ventana 7 · Recuperación |
