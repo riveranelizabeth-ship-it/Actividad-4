@@ -28,6 +28,8 @@ El modelo clasifica comentarios bancarios como positivos, neutrales o negativos 
 
 La prueba usó XLM-RoBERTa en CPU y midió inferencia individual dentro del cuaderno. El umbral de 500 ms se conserva para simular incidentes en este entorno. Los resultados de calidad corresponden al mismo conjunto sintético de referencia de la Actividad 4.
 
+MLflow registró la corrida `linea-base` en el experimento `Actividad 8 - SentimentAI Banking`. La ejecución generó `solicitudes.csv` y `metricas.json`, guardados como artefactos de la corrida y exportados en `/content/evidencias_linea_base`.
+
 [Notebook de línea base](01_linea_base.ipynb)
 
 En cada solicitud se registrarán fecha y hora, identificador de traza, versión del modelo, etapa, duración y resultado. Las trazas desglosarán preprocesamiento, inferencia y respuesta. Los logs operativos omitirán el texto del comentario. El dashboard mostrará por ventana la latencia p95, la proporción de solicitudes lentas, el presupuesto consumido, las alertas activas y el recall negativo cuando haya etiquetas. Se propone usar MLflow para registrar la evolución de las pruebas.
