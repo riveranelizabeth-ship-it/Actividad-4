@@ -1,6 +1,6 @@
 # Actividad 8 — Monitoreo de SentimentAI Banking
 
-**Estado:** línea base ejecutada en Colab con CPU. Simulación de incidentes pendiente.
+**Estado:** línea base ejecutada en Colab con CPU. Simulación ejecutada por reproducción de solicitudes. Visualización y registro de los incidentes en Colab pendientes de verificación.
 
 ## 1. Monitorización y observabilidad
 
@@ -51,10 +51,25 @@ La latencia se medirá de extremo a extremo. La línea base del cuaderno permite
 | Incremento de latencia | Incumplimiento sostenido del SLO y trazas que localizan el retraso | Retirar la condición que introduce la demora en la prueba | Medir de nuevo latencia y solicitudes fuera del SLO |
 | Degradación en detección de comentarios negativos | Caída sostenida del recall en ejemplos etiquetados tras activar una variante de prueba | Restaurar la versión estable con el runbook de rollback | Confirmar la versión activa y volver a medir recall en la misma muestra |
 
-Cada registro incluirá la línea base, la falla, la alerta, la acción con marca de tiempo y la recuperación observada.
+### Resultados de la simulación
+
+Se reprodujeron las 300 solicitudes originales en cada ventana. Se sumaron 700 ms en el perfil de demora. La variante degradada cambió a neutral las predicciones negativas en posiciones pares del registro (índice desde cero). Las acciones cambian el perfil de la simulación.
+
+| Indicador | Ventana 1 · Línea base | Ventana 5 · Alerta | Ventana 7 · Recuperación |
+| --- | ---: | ---: | ---: |
+| Latencia p95 · incidente de latencia | 174.45 ms | 874.45 ms | 174.45 ms |
+| Cumplimiento del SLO · incidente de latencia | 100 % | 0 % | 100 % |
+| Consumo del presupuesto · incidente de latencia | 0 % | 2000 % (300 de 15) | 0 % |
+| Recall negativo · incidente de calidad | 95 % | 50 % | 95 % |
+
+El pico aislado de la ventana 2 quedó sin alerta. Cada incidente generó un aviso en la ventana 5, tras dos ventanas consecutivas de incumplimiento. Se retiró la demora y se ejecutó el rollback de la variante degradada, respectivamente. El cierre se verificó tras dos ventanas recuperadas.
+
+- [Script y configuración de alertas](simular_incidentes.py)
+- [Evidencia de ventanas, alertas y acciones](evidencias/incidentes/resultados.json)
+- [Notebook para visualizar y registrar los incidentes en MLflow](02_incidentes.ipynb)
 
 ## 4. Respuesta automatizada
 
 En el entorno de pruebas, la alerta confirmada de degradación restaurará la versión estable. El código registrará el motivo, las versiones anterior y posterior y el resultado de la verificación. Si la verificación falla, el incidente seguirá abierto para escalamiento. Una señal de drift iniciará revisión de datos antes de plantear un reentrenamiento.
 
-El notebook de incidentes, la configuración de alertas y las evidencias se incorporarán al README después de implementar y ejecutar el monitoreo.
+Queda pendiente incorporar la evidencia visual del dashboard, el registro de incidentes en MLflow y la prueba de detección de drift.
