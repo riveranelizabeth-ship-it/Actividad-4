@@ -4,13 +4,13 @@
 
 ## 1. Monitorización y observabilidad
 
-El modelo clasifica comentarios bancarios como positivos, neutrales o negativos para facilitar la revisión humana. Se toma como versión estable XLM-RoBERTa, el modelo seleccionado en la [Actividad 4](../Readme.md). El [conjunto de referencia](../data/SentimentAI_Banking_Dataset_300.csv) contiene 300 comentarios sintéticos etiquetados, con 100 por clase. Se reutilizará para verificar el comportamiento durante el ejercicio.
+El modelo clasifica comentarios bancarios como positivos, neutrales o negativos para facilitar la revisión humana. Se toma como versión estable XLM-RoBERTa, el modelo seleccionado en la [Actividad 4](../Readme.md). El [conjunto de referencia](../data/SentimentAI_Banking_Dataset_300.csv) contiene 300 comentarios sintéticos etiquetados, con 100 por clase. Se reutilizó para verificar el comportamiento durante el ejercicio.
 
 | Indicador | Referencia histórica | Uso operativo |
 | --- | ---: | --- |
 | Recall de comentarios negativos | 95 de 100 | Medir cuántos comentarios negativos se detectan en la muestra etiquetada. |
 | F1 macro | 0.9767 | Revisar el desempeño en las tres clases con el mismo peso. |
-| Latencia individual p95 | 45.08 ms en GPU Tesla T4 | Comparar tiempos de inferencia. La línea base del servicio se medirá de nuevo en el entorno del ejercicio. |
+| Latencia individual p95 | 45.08 ms en GPU Tesla T4 | Comparar tiempos de inferencia. La línea base en CPU se presenta abajo. |
 
 [Resultados originales](../results/metricas_comparativas.csv) · [Revisión del modelo](../model_revisions.json)
 
@@ -34,7 +34,9 @@ MLflow registró la corrida `linea-base` en el experimento `Actividad 8 - Sentim
 - [Resumen de métricas exportado](evidencias/linea_base/metricas.json)
 - [Registro de las 300 solicitudes](evidencias/linea_base/solicitudes.csv)
 
-En cada solicitud se registrarán fecha y hora, identificador de traza, versión del modelo, etapa, duración y resultado. Las trazas desglosarán preprocesamiento, inferencia y respuesta. Los logs operativos omitirán el texto del comentario. El dashboard mostrará por ventana la latencia p95, la proporción de solicitudes lentas, el presupuesto consumido, las alertas activas y el recall negativo cuando haya etiquetas. Se propone usar MLflow para registrar la evolución de las pruebas.
+El registro por solicitud incluye fecha y hora UTC, `trace_id`, revisión del modelo, ID del ejemplo, etiqueta, predicción, duración total, estado y tipo de error. Con el mismo `trace_id` se consultan los tiempos de preprocesamiento e inferencia en el CSV. El registro excluye el texto del comentario.
+
+El tablero operativo se diseñó para actualizarse al cerrar cada ventana y mostrar latencia p95, cumplimiento del SLO, consumo de presupuesto, recall negativo y estado de las alertas. En Colab, el gráfico muestra latencia y recall con las marcas de alerta y cierre. MLflow conserva las métricas por ventana y el archivo de eventos. El tablero de evidencia se genera al terminar la reproducción. La actualización en vivo es parte del diseño operativo.
 
 Para detectar *data drift*, compararemos la distribución de longitud y la proporción de palabras fuera del vocabulario de referencia entre los comentarios históricos y una ventana reciente. Una alerta de drift abrirá una revisión de la muestra. La caída de calidad se comprobará con etiquetas.
 
@@ -42,14 +44,26 @@ Para detectar *data drift*, compararemos la distribución de longitud y la propo
 
 SLO provisional del ejercicio: al menos el 95 % de las solicitudes válidas debe completarse correctamente en 500 ms o menos dentro de la ventana de evaluación. El presupuesto de error es el 5 % de esas solicitudes. Con 200 solicitudes, se admiten hasta 10 incumplimientos. El consumo del presupuesto se calcula como incumplimientos observados / incumplimientos permitidos.
 
-La latencia se medirá de extremo a extremo. La línea base del cuaderno permite usar este umbral en el ejercicio. Si cambia el entorno de ejecución, se volverá a medir la línea base. Se propone exigir una muestra mínima por ventana y dos ventanas consecutivas sobre el límite para abrir un incidente sostenido, agrupar avisos por incidente activo y verificar el cierre con ventanas recuperadas. La alerta de calidad tendrá su propia condición y requerirá suficientes ejemplos negativos etiquetados.
+Cada ventana de la simulación reproduce 300 solicitudes, con 15 incumplimientos permitidos. La latencia corresponde a la duración de cada solicitud dentro del cuaderno.
+
+| Señal | Condición de apertura | Prioridad y acción |
+| --- | --- | --- |
+| Latencia y errores | Más de 15 incumplimientos en cada una de dos ventanas consecutivas | P1. Retirar la demora inyectada. |
+| Recall negativo | Menos de 85 % en cada una de dos ventanas consecutivas, con 100 negativos etiquetados por ventana | P1. Restaurar el perfil estable. |
+| Cambio en los textos | Se supera al menos un umbral del detector de drift | Candidato a P2. Revisar la muestra y evaluar el efecto con etiquetas. |
+
+Los dos runbooks de incidentes agrupan avisos por incidente activo y verifican el cierre tras dos ventanas consecutivas recuperadas. La revisión de drift se ejecuta como prueba independiente.
 
 ## 3. Simulación de incidentes y runbooks
 
 | Incidente previsto | Detección | Intervención | Verificación |
 | --- | --- | --- | --- |
-| Incremento de latencia | Incumplimiento sostenido del SLO y trazas que localizan el retraso | Retirar la condición que introduce la demora en la prueba | Medir de nuevo latencia y solicitudes fuera del SLO |
+| Incremento de latencia | Incumplimiento sostenido del SLO durante la inyección de demora | Retirar la condición que introduce la demora en la prueba | Medir de nuevo latencia y solicitudes fuera del SLO |
 | Degradación en detección de comentarios negativos | Caída sostenida del recall en ejemplos etiquetados tras activar una variante de prueba | Restaurar la versión estable con el runbook de rollback | Confirmar la versión activa y volver a medir recall en la misma muestra |
+
+**Runbook de latencia.** Confirmar dos ventanas con presupuesto excedido. Identificar el perfil de demora en el registro. Desactivar la demora y comprobar durante dos ventanas que se recupera el SLO. Registrar el cierre.
+
+**Runbook de degradación.** Confirmar dos ventanas con recall bajo y verificar que el perfil degradado esté activo. Restaurar el perfil estable y medir el recall en dos ventanas consecutivas con ejemplos etiquetados. Registrar el cierre después de comprobar la recuperación.
 
 ### Resultados de la simulación
 
@@ -74,7 +88,7 @@ El pico aislado de la ventana 2 quedó sin alerta. Cada incidente generó un avi
 
 ## 4. Respuesta automatizada
 
-En el entorno de pruebas, la alerta confirmada de degradación restaurará la versión estable. El código registrará el motivo, las versiones anterior y posterior y el resultado de la verificación. Si la verificación falla, el incidente seguirá abierto para escalamiento. Una señal de drift iniciará revisión de datos antes de plantear un reentrenamiento.
+El script ejecuta automáticamente el cambio al perfil estable cuando se confirma una alerta. Registra la ventana de activación, la acción y los perfiles anterior y posterior. El cierre exige dos ventanas recuperadas. En una operación real, un incidente que siga abierto se escalaría al responsable del servicio. La señal de drift abriría una revisión antes de decidir si corresponde reentrenar.
 
 La ejecución de Colab mostró el tablero y confirmó la corrida `simulacion-incidentes` en MLflow. El notebook exporta `dashboard_incidentes.png` y `resultados_incidentes.json`. El tablero resume ventanas de reproducción y muestra la alerta y el cierre.
 
