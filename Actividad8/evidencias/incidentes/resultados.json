@@ -1,0 +1,162 @@
+{
+  "ventanas": [
+    {
+      "incidente": "latencia",
+      "ventana": 1,
+      "perfil": "estable",
+      "p95_ms": 174.4543,
+      "cumplimiento_slo": 1.0,
+      "consumo_presupuesto": 0.0,
+      "recall_negativo": 0.95
+    },
+    {
+      "incidente": "latencia",
+      "ventana": 2,
+      "perfil": "demora_inyectada",
+      "p95_ms": 874.4543,
+      "cumplimiento_slo": 0.0,
+      "consumo_presupuesto": 20.0,
+      "recall_negativo": 0.95
+    },
+    {
+      "incidente": "latencia",
+      "ventana": 3,
+      "perfil": "estable",
+      "p95_ms": 174.4543,
+      "cumplimiento_slo": 1.0,
+      "consumo_presupuesto": 0.0,
+      "recall_negativo": 0.95
+    },
+    {
+      "incidente": "latencia",
+      "ventana": 4,
+      "perfil": "demora_inyectada",
+      "p95_ms": 874.4543,
+      "cumplimiento_slo": 0.0,
+      "consumo_presupuesto": 20.0,
+      "recall_negativo": 0.95
+    },
+    {
+      "incidente": "latencia",
+      "ventana": 5,
+      "perfil": "demora_inyectada",
+      "p95_ms": 874.4543,
+      "cumplimiento_slo": 0.0,
+      "consumo_presupuesto": 20.0,
+      "recall_negativo": 0.95
+    },
+    {
+      "incidente": "latencia",
+      "ventana": 6,
+      "perfil": "estable",
+      "p95_ms": 174.4543,
+      "cumplimiento_slo": 1.0,
+      "consumo_presupuesto": 0.0,
+      "recall_negativo": 0.95
+    },
+    {
+      "incidente": "latencia",
+      "ventana": 7,
+      "perfil": "estable",
+      "p95_ms": 174.4543,
+      "cumplimiento_slo": 1.0,
+      "consumo_presupuesto": 0.0,
+      "recall_negativo": 0.95
+    },
+    {
+      "incidente": "calidad",
+      "ventana": 1,
+      "perfil": "estable",
+      "p95_ms": 174.4543,
+      "cumplimiento_slo": 1.0,
+      "consumo_presupuesto": 0.0,
+      "recall_negativo": 0.95
+    },
+    {
+      "incidente": "calidad",
+      "ventana": 2,
+      "perfil": "variante_degradada",
+      "p95_ms": 174.4543,
+      "cumplimiento_slo": 1.0,
+      "consumo_presupuesto": 0.0,
+      "recall_negativo": 0.5
+    },
+    {
+      "incidente": "calidad",
+      "ventana": 3,
+      "perfil": "estable",
+      "p95_ms": 174.4543,
+      "cumplimiento_slo": 1.0,
+      "consumo_presupuesto": 0.0,
+      "recall_negativo": 0.95
+    },
+    {
+      "incidente": "calidad",
+      "ventana": 4,
+      "perfil": "variante_degradada",
+      "p95_ms": 174.4543,
+      "cumplimiento_slo": 1.0,
+      "consumo_presupuesto": 0.0,
+      "recall_negativo": 0.5
+    },
+    {
+      "incidente": "calidad",
+      "ventana": 5,
+      "perfil": "variante_degradada",
+      "p95_ms": 174.4543,
+      "cumplimiento_slo": 1.0,
+      "consumo_presupuesto": 0.0,
+      "recall_negativo": 0.5
+    },
+    {
+      "incidente": "calidad",
+      "ventana": 6,
+      "perfil": "estable",
+      "p95_ms": 174.4543,
+      "cumplimiento_slo": 1.0,
+      "consumo_presupuesto": 0.0,
+      "recall_negativo": 0.95
+    },
+    {
+      "incidente": "calidad",
+      "ventana": 7,
+      "perfil": "estable",
+      "p95_ms": 174.4543,
+      "cumplimiento_slo": 1.0,
+      "consumo_presupuesto": 0.0,
+      "recall_negativo": 0.95
+    }
+  ],
+  "eventos": [
+    {
+      "incidente": "latencia",
+      "ventana": 5,
+      "evento": "alerta",
+      "prioridad": "P1",
+      "accion": "retirar demora de prueba",
+      "antes": "demora_inyectada",
+      "despues": "estable"
+    },
+    {
+      "incidente": "latencia",
+      "ventana": 7,
+      "evento": "cierre",
+      "accion": "recuperación verificada"
+    },
+    {
+      "incidente": "calidad",
+      "ventana": 5,
+      "evento": "alerta",
+      "prioridad": "P1",
+      "accion": "rollback a perfil estable",
+      "antes": "variante_degradada",
+      "despues": "estable"
+    },
+    {
+      "incidente": "calidad",
+      "ventana": 7,
+      "evento": "cierre",
+      "accion": "recuperación verificada"
+    }
+  ]
+}
