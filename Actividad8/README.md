@@ -130,6 +130,8 @@ La señal abre una revisión del cambio en los textos. Esta prueba evaluó la de
 
 ## 6. Conclusiones
 
-La simulación de SentimentAI Banking demostró que las reglas por ventana detectaron fallas sostenidas y que los runbooks recuperaron el cumplimiento del SLO y la detección de comentarios negativos. Las métricas de MLflow, las trazas por solicitud y el registro de eventos permiten seguir el resultado desde la línea base hasta el cierre de cada incidente.
+La latencia y la calidad del modelo requieren alertas distintas. Durante la degradación simulada, todas las solicitudes siguieron dentro del objetivo de 500 ms, aunque el modelo pasó de detectar 95 a detectar 50 de los 100 comentarios negativos. Si el monitoreo se limitara a los tiempos de respuesta, esa caída de calidad quedaría sin detectar.
 
-La prueba independiente de drift confirmó la detección de un cambio sintético en los textos de entrada. El alcance de los resultados se circunscribe a datos sintéticos en Colab, a un rollback entre perfiles de la simulación y a un tablero generado al finalizar la reproducción.
+La regla de dos ventanas consecutivas evitó generar un aviso por el pico aislado y activó una intervención ante cada falla sostenida. En esta prueba, la regla funcionó con ventanas de 300 solicitudes. Su tiempo de reacción depende de cuánto tarda en completarse cada ventana, y la alerta de calidad depende además de contar con ejemplos etiquetados. La recuperación se comprobó con el indicador afectado en cada incidente, después de retirar la demora o restaurar el perfil estable.
+
+El cambio en el vocabulario sirvió como señal temprana para revisar las entradas. Como la prueba de drift midió características de los textos, la decisión de reentrenar requeriría comprobar primero si ese cambio afecta el desempeño del clasificador. Los umbrales y las respuestas se evaluaron con datos sintéticos y solicitudes reproducidas en Colab. Su aplicación a tráfico real requiere calibración y validación en ese entorno.
