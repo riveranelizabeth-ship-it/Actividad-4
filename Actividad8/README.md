@@ -1,6 +1,6 @@
 # Actividad 8 — Monitoreo de SentimentAI Banking
 
-**Estado:** línea base ejecutada en Colab con CPU. Simulación ejecutada por reproducción de solicitudes. Visualización y corrida de incidentes en MLflow verificadas en Colab. Prueba de drift ejecutada.
+Este informe presenta la línea base de SentimentAI Banking en Colab, la respuesta a dos incidentes simulados y la prueba de detección de *data drift*.
 
 ## Estructura del README
 
@@ -10,6 +10,8 @@
 | [2. Diseño y aplicación de alertas inteligentes](#2-alertas-inteligentes) · 25 % | SLO, presupuesto de error, umbrales, prioridades y reglas para evitar alertas repetidas. |
 | [3. Simulación de incidentes y uso de runbooks](#3-simulación-de-incidentes-y-runbooks) · 25 % | Procedimientos, tablero, registro de alertas y resultados antes, durante y después de las dos fallas simuladas. |
 | [4. Documentación de la respuesta automatizada](#4-respuesta-automatizada) · 25 % | Cambio automático al perfil estable, verificación del cierre y registro en MLflow. |
+
+**Cierre del informe.** [Análisis de resultados](#5-análisis-de-resultados) y [conclusiones](#6-conclusiones).
 
 **Código y evidencias.** [Notebook de línea base](01_linea_base.ipynb), [notebook de incidentes](02_incidentes.ipynb), [script de simulación y alertas](simular_incidentes.py), [prueba de detección de *data drift*](#prueba-de-detección-de-data-drift) y [carpeta de evidencias](evidencias/).
 
@@ -49,11 +51,11 @@ El registro por solicitud incluye fecha y hora UTC, `trace_id`, revisión del mo
 
 El tablero operativo se diseñó para actualizarse al cerrar cada ventana y mostrar latencia p95, cumplimiento del SLO, consumo de presupuesto, recall negativo y estado de las alertas. En Colab, el gráfico muestra latencia y recall con las marcas de alerta y cierre. MLflow conserva las métricas por ventana y el archivo de eventos. El tablero de evidencia se genera al terminar la reproducción. La actualización en vivo es parte del diseño operativo.
 
-Para detectar *data drift*, compararemos la distribución de longitud y la proporción de palabras fuera del vocabulario de referencia entre los comentarios históricos y una ventana reciente. Una alerta de drift abrirá una revisión de la muestra. La caída de calidad se comprobará con etiquetas.
+La prueba de *data drift* comparó la longitud de los comentarios y la proporción de palabras fuera del vocabulario de referencia. Los resultados se presentan en la sección 4.
 
 ## 2. Alertas inteligentes
 
-SLO provisional del ejercicio: al menos el 95 % de las solicitudes válidas debe completarse correctamente en 500 ms o menos dentro de la ventana de evaluación. El presupuesto de error es el 5 % de esas solicitudes. Con 200 solicitudes, se admiten hasta 10 incumplimientos. El consumo del presupuesto se calcula como incumplimientos observados / incumplimientos permitidos.
+SLO aplicado en el ejercicio: al menos el 95 % de las solicitudes válidas debe completarse correctamente en 500 ms o menos dentro de la ventana de evaluación. El presupuesto de error es el 5 % de esas solicitudes. Con 200 solicitudes, se admiten hasta 10 incumplimientos. El consumo del presupuesto se calcula como incumplimientos observados / incumplimientos permitidos.
 
 Cada ventana de la simulación reproduce 300 solicitudes, con 15 incumplimientos permitidos. La latencia corresponde a la duración de cada solicitud dentro del cuaderno.
 
@@ -67,7 +69,7 @@ Los dos runbooks de incidentes agrupan avisos por incidente activo y verifican e
 
 ## 3. Simulación de incidentes y runbooks
 
-| Incidente previsto | Detección | Intervención | Verificación |
+| Incidente simulado | Detección | Intervención | Verificación |
 | --- | --- | --- | --- |
 | Incremento de latencia | Incumplimiento sostenido del SLO durante la inyección de demora | Retirar la condición que introduce la demora en la prueba | Medir de nuevo latencia y solicitudes fuera del SLO |
 | Degradación en detección de comentarios negativos | Caída sostenida del recall en ejemplos etiquetados tras activar una variante de prueba | Restaurar la versión estable con el runbook de rollback | Confirmar la versión activa y volver a medir recall en la misma muestra |
@@ -99,7 +101,7 @@ El pico aislado de la ventana 2 quedó sin alerta. Cada incidente generó un avi
 
 ## 4. Respuesta automatizada
 
-El script ejecuta automáticamente el cambio al perfil estable cuando se confirma una alerta. Registra la ventana de activación, la acción y los perfiles anterior y posterior. El cierre exige dos ventanas recuperadas. En una operación real, un incidente que siga abierto se escalaría al responsable del servicio. La señal de drift abriría una revisión antes de decidir si corresponde reentrenar.
+El script ejecuta automáticamente el cambio al perfil estable cuando se confirma una alerta. Registra la ventana de activación, la acción y los perfiles anterior y posterior. El cierre exige dos ventanas recuperadas. El procedimiento operativo asigna al responsable del servicio la atención de los incidentes que permanecen abiertos. La señal de drift indica un cambio que amerita revisión.
 
 La ejecución de Colab mostró el tablero y confirmó la corrida `simulacion-incidentes` en MLflow. El notebook exporta `dashboard_incidentes.png` y `resultados_incidentes.json`. El tablero resume ventanas de reproducción y muestra la alerta y el cierre.
 
@@ -113,7 +115,21 @@ Se construyó un vocabulario con 150 comentarios, se calibraron las métricas co
 | Control | 9 | 20.34 % | No |
 | Cambio sintético | 15 | 51.19 % | Sí |
 
-La señal abre una revisión del cambio en los textos. Para determinar si afecta al modelo se necesitarían predicciones y etiquetas de esa ventana.
+La señal abre una revisión del cambio en los textos. Esta prueba evaluó la detección de cambios en los textos de entrada.
 
 - [Código del detector](detectar_drift.py)
 - [Resultados exportados de drift](evidencias/drift/resultados.json)
+
+## 5. Análisis de resultados
+
+- **Línea base.** Las 300 solicitudes se completaron correctamente dentro del límite de 500 ms. El p95 de 174.45 ms respalda el uso del límite en el ejercicio con CPU. El F1 macro de 0.9767 y el recall negativo del 95 % corresponden al conjunto sintético de la Actividad 4.
+- **Incidente de latencia.** El p95 aumentó de 174.45 a 874.45 ms. En la ventana de alerta hubo 300 incumplimientos frente a los 15 permitidos, equivalentes a 20 veces el presupuesto de esa ventana. Al retirar la demora, el p95 volvió a 174.45 ms y el cumplimiento del SLO se recuperó al 100 %.
+- **Incidente de calidad.** La variante degradada redujo el recall negativo de 95 % a 50 %, una caída de 45 puntos porcentuales. El rollback automático del perfil simulado recuperó la detección de 95 de los 100 casos negativos.
+- **Comportamiento de las alertas.** El pico aislado de la ventana 2 quedó sin alerta. Cada falla sostenida generó un aviso en la ventana 5 y el cierre se verificó en la ventana 7, tras dos ventanas consecutivas de recuperación.
+- **Detección de drift.** La muestra de control permaneció cerca de la calibración. Al modificar los textos, la longitud mediana aumentó de 9 a 15 palabras y la proporción de palabras fuera del vocabulario pasó de 20.34 % a 51.19 % respecto al control. El detector activó la revisión de esa ventana.
+
+## 6. Conclusiones
+
+La simulación de SentimentAI Banking demostró que las reglas por ventana detectaron fallas sostenidas y que los runbooks recuperaron el cumplimiento del SLO y la detección de comentarios negativos. Las métricas de MLflow, las trazas por solicitud y el registro de eventos permiten seguir el resultado desde la línea base hasta el cierre de cada incidente.
+
+La prueba independiente de drift confirmó la detección de un cambio sintético en los textos de entrada. El alcance de los resultados se circunscribe a datos sintéticos en Colab, a un rollback entre perfiles de la simulación y a un tablero generado al finalizar la reproducción.
