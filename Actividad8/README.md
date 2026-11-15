@@ -2,6 +2,17 @@
 
 **Estado:** línea base ejecutada en Colab con CPU. Simulación ejecutada por reproducción de solicitudes. Visualización y corrida de incidentes en MLflow verificadas en Colab. Prueba de drift ejecutada.
 
+## Estructura del README
+
+| Criterio de la rúbrica | Qué encontrarás |
+| --- | --- |
+| [1. Diseño de monitorización y observabilidad](#1-monitorización-y-observabilidad) · 25 % | Indicadores, línea base en Colab, logs y trazas por solicitud. |
+| [2. Diseño y aplicación de alertas inteligentes](#2-alertas-inteligentes) · 25 % | SLO, presupuesto de error, umbrales, prioridades y reglas para evitar alertas repetidas. |
+| [3. Simulación de incidentes y uso de runbooks](#3-simulación-de-incidentes-y-runbooks) · 25 % | Procedimientos, tablero, registro de alertas y resultados antes, durante y después de las dos fallas simuladas. |
+| [4. Documentación de la respuesta automatizada](#4-respuesta-automatizada) · 25 % | Cambio automático al perfil estable, verificación del cierre y registro en MLflow. |
+
+**Código y evidencias.** [Notebook de línea base](01_linea_base.ipynb), [notebook de incidentes](02_incidentes.ipynb), [script de simulación y alertas](simular_incidentes.py), [prueba de detección de *data drift*](#prueba-de-detección-de-data-drift) y [carpeta de evidencias](evidencias/).
+
 ## 1. Monitorización y observabilidad
 
 El modelo clasifica comentarios bancarios como positivos, neutrales o negativos para facilitar la revisión humana. Se toma como versión estable XLM-RoBERTa, el modelo seleccionado en la [Actividad 4](../Readme.md). El [conjunto de referencia](../data/SentimentAI_Banking_Dataset_300.csv) contiene 300 comentarios sintéticos etiquetados, con 100 por clase. Se reutilizó para verificar el comportamiento durante el ejercicio.
